@@ -1,0 +1,99 @@
+#app {
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* position:absolute; */
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #409eff;
+  /* padding: 10px 20px; */
+  color: white;
+  opacity: 80%;
+
+  /* 添加以下属性以固定导航栏 */
+  position: fixed; 
+  /* 导航栏将固定在视口顶部 */
+  top: 0; /* 导航栏的顶部与视口的顶部对齐 */
+  left: 0; /* 导航栏的左侧与视口的左侧对齐 */
+  right: 0; /* 导航栏的右侧与视口的右侧对齐 */
+  z-index: 2; /* 确保导航栏在页面内容之上 */
+}
+
+.footer{
+  padding: 0;
+  
+
+
+
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.login-link {
+  margin-left: auto;
+}
+
+.router-link {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16pt;
+  transition: color 0.3s ease;
+}
+
+.router-link:hover {
+  color: #007bff;
+}
+
+.main-content {
+  margin-top: 1%;
+  flex: 1;
+  padding: 0px;
+}
+
+/* 返回顶部 */
+.back-to-top {
+  position: fixed;
+  bottom: 20%;
+  right: 3%;
+  z-index: 5; /*层级*/
+  background-color: #fff;
+  border: none;
+  
+}
+
+/* 隐藏滚动条 */
+body::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+/* 修改滚动条宽度 */
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* 修改滚动条轨道的样式 */
+body::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* 修改滚动条滑块的样式 */
+body::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+/* 滑块在悬停时的样式 */
+body::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
